@@ -1,5 +1,7 @@
 import Client, { CommitmentLevel, SubscribeRequest } from "@triton-one/yellowstone-grpc";
 
+
+const rpcURL = "https://devnet-rpc.shyft.to?api_key=jhMy_G9KF_d6MPTw";
 async function main() {
 
     // 创建订阅客户端
@@ -9,7 +11,7 @@ async function main() {
     // 见 https://github.com/rpcpool/yellowstone-grpc/issues/428
     // @ts-ignore
     const client = new Client.default(
-        "https://test-grpc.chainbuff.com",
+        rpcURL,
         undefined,
         {
             "grpc.max_receive_message_length": 16 * 1024 * 1024, // 16MB
