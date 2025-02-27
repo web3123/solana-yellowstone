@@ -1,0 +1,5 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node" // 确保使用 Node 模块解析策略
+  }
+}
